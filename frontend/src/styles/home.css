@@ -1,0 +1,80 @@
+.home{
+    width: 100%;
+    min-height:80vh;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content{
+    display: flex;
+    gap: 30px;
+}
+.text{
+    text-align: center;
+}
+.text-heading{
+    margin-bottom: 10px;
+}
+#text1,#text2{
+border-radius: 5px;
+ width: 400px;   
+ height: 300px;
+ color: black;
+ padding: 10px;
+ resize: none;
+}
+
+input[type="file"]{
+    display: none;
+  }
+
+.fileInput1l,.fileInput2l{
+    font-size: small;
+    cursor: pointer;
+    color: #757575;
+    width: 400px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+
+
+.btn{
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 5px;
+    color: black;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.btn:hover{
+    transform: translateY(-3px);
+}
+@media (max-width:898px){
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #text1{
+        width: 300px;
+       }
+       .fileInput1l{
+        width: 300px;
+       }
+       #text2{
+           width: 300px;
+        }
+        .fileInput2l{
+         width: 300px;
+        }
+}

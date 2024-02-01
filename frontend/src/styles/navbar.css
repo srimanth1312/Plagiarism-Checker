@@ -1,0 +1,49 @@
+
+
+.navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(24, 22, 22);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgb(131, 128, 128);
+    box-shadow: 0 0 3px 0px rgb(131, 128, 128);
+}
+.logo{
+    margin-left: 40px;
+    transition: 0.3s ease;
+    
+}
+.logo:hover{
+    transform: translateY(-3px);
+
+}
+.links{
+
+ display: flex;
+ margin-right: 40px;
+ gap:40px;
+ align-items: center;
+
+}
+
+.link{
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.link:hover{
+    transform: translateY(-3px);
+}
+
+@media screen AND (max-width:395px) {
+    .logo{
+        margin-left: 20px;
+    }
+    .links{
+        margin-left: 20px;
+    }
+}
